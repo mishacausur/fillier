@@ -27,7 +27,15 @@
     [self.view addSubview:self.yellowView];
     
     [self.view bringSubviewToFront:self.blueView];
+    
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(20.0, 20.0, 60.0, 60.0)];
+    [button setTitle:@"Tap" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(tapHandle) forControlEvents:UIControlEventTouchUpInside];
+    [self.blueView addSubview:button];
 }
 
-
+- (void)tapHandle
+{
+    NSLog(@"tap");
+}
 @end
