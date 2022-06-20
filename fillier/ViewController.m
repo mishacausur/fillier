@@ -27,6 +27,7 @@
     [self.view addSubview:self.yellowView];
     
     [self.view bringSubviewToFront:self.blueView];
+    self.view.backgroundColor = [UIColor blackColor];
     
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(20.0, 20.0, 60.0, 60.0)];
     [button setTitle:@"Tap" forState:UIControlStateNormal];
@@ -42,5 +43,13 @@
 - (void)tapHandle
 {
     NSLog(@"tap");
+    
+    [UIView animateWithDuration:1.0 animations:^{
+        self.blueView.transform = CGAffineTransformRotate(self.blueView.transform, M_PI / 6);
+        } completion:^(BOOL finished) {
+            NSLog(@"________ CHANGES");
+            NSLog(@"Frame: %@", NSStringFromCGRect(self.blueView.frame));
+            NSLog(@"Frame: %@", NSStringFromCGRect(self.blueView.bounds));
+        }];
 }
 @end
