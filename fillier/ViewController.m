@@ -45,7 +45,7 @@
     sublayer.shadowRadius = 5.0;
     sublayer.shadowColor = [UIColor blackColor].CGColor;
     sublayer.shadowOpacity = 0.8;
-    sublayer.frame = CGRectMake(30.0, 30.0, 128.0, 192.0);
+    sublayer.frame = CGRectMake(300.0, 300.0, 128.0, 192.0);
     
     [self.view.layer addSublayer:sublayer];
 }
