@@ -38,6 +38,12 @@
     NSLog(@"Frame: %@", NSStringFromCGRect(self.blueView.bounds));
     NSLog(@"Frame: %@", NSStringFromCGRect(self.yellowView.frame));
     NSLog(@"Frame: %@", NSStringFromCGRect(self.yellowView.bounds));
+    
+    CALayer *sublayer = [CALayer layer];
+    sublayer.backgroundColor = [UIColor blueColor].CGColor;
+    sublayer.shadowOffset = CGSizeMake(0.0, 3.0);
+    sublayer.shadowRadius = 5.0;
+    sublayer.shadowColor = [UIColor blackColor].CGColor;
 }
 
 - (void)tapHandle
