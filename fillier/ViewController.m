@@ -44,6 +44,10 @@
     sublayer.shadowOffset = CGSizeMake(0.0, 3.0);
     sublayer.shadowRadius = 5.0;
     sublayer.shadowColor = [UIColor blackColor].CGColor;
+    sublayer.shadowOpacity = 0.8;
+    sublayer.frame = CGRectMake(30.0, 30.0, 128.0, 192.0);
+    
+    [self.view.layer addSublayer:sublayer];
 }
 
 - (void)tapHandle
