@@ -34,7 +34,9 @@
     [self.blueView addSubview:button];
     
     NSLog(@"Frame: %@", NSStringFromCGRect(self.blueView.frame));
+    NSLog(@"Frame: %@", NSStringFromCGRect(self.blueView.bounds));
     NSLog(@"Frame: %@", NSStringFromCGRect(self.yellowView.frame));
+    NSLog(@"Frame: %@", NSStringFromCGRect(self.yellowView.bounds));
 }
 
 - (void)tapHandle
