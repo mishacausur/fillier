@@ -15,11 +15,13 @@
 
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
+    
     UIWindow *window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
     window.backgroundColor = [UIColor greenColor];
     
     ViewController *rootViewController = [[ViewController alloc] init];
     rootViewController.view.backgroundColor = [UIColor redColor];
+    window.windowScene = scene;
     window.rootViewController = rootViewController;
     self.window = window;
     [self.window makeKeyAndVisible];
