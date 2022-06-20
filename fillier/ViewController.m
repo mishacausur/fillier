@@ -32,6 +32,9 @@
     [button setTitle:@"Tap" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(tapHandle) forControlEvents:UIControlEventTouchUpInside];
     [self.blueView addSubview:button];
+    
+    NSLog(@"Frame: %@", NSStringFromCGRect(self.blueView.frame));
+    NSLog(@"Frame: %@", NSStringFromCGRect(self.yellowView.frame));
 }
 
 - (void)tapHandle
