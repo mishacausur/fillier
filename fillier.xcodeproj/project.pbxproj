@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B634BD7A2863B06F00171D25 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = B634BD792863B06F00171D25 /* Car.m */; };
 		B6D9D88D285F397900D795F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D9D88C285F397900D795F3 /* AppDelegate.m */; };
 		B6D9D890285F397900D795F3 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D9D88F285F397900D795F3 /* SceneDelegate.m */; };
 		B6D9D893285F397900D795F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D9D892285F397900D795F3 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B634BD782863B06F00171D25 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		B634BD792863B06F00171D25 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		B6D9D888285F397900D795F3 /* fillier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fillier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D9D88B285F397900D795F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6D9D88C285F397900D795F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,6 +77,8 @@
 				B6D9D899285F397C00D795F3 /* LaunchScreen.storyboard */,
 				B6D9D89C285F397C00D795F3 /* Info.plist */,
 				B6D9D89D285F397C00D795F3 /* main.m */,
+				B634BD782863B06F00171D25 /* Car.h */,
+				B634BD792863B06F00171D25 /* Car.m */,
 			);
 			path = fillier;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B634BD7A2863B06F00171D25 /* Car.m in Sources */,
 				B6D9D8A6285F39F000D795F3 /* ColorView.m in Sources */,
 				B6D9D893285F397900D795F3 /* ViewController.m in Sources */,
 				B6D9D88D285F397900D795F3 /* AppDelegate.m in Sources */,
