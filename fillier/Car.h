@@ -19,10 +19,10 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface Car : NSObject <Vehicle>
-{
-    double _power;
-    NSString *_model;
-}
+
+@property (nonatomic, assign) double power;
+@property (nonatomic, assign) NSString *model;
+@property (nonatomic, assign, readonly) double distance;
 
 - (id)initWithModel:(NSString *)model andPower:(double)power;
 - (NSString *)info;

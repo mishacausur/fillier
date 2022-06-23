@@ -14,6 +14,8 @@ static int count = 0;
     double _distance;
 }
 
+@property (nonatomic, assign) double distance;
+
 - (void)startEngine;
 - (void)stopEngine;
 
@@ -34,7 +36,7 @@ static int count = 0;
 
 - (NSString *)info
 {
-    NSString *strInfo = [NSString stringWithFormat:@"Model: %@; power: %lf", _model, _power];
+    NSString *strInfo = [NSString stringWithFormat:@"Model: %@; power: %lf", self.model, self.power];
     return strInfo;
 }
 
@@ -45,7 +47,7 @@ static int count = 0;
 
 - (void)ride:(double)distance
 {
-    _distance += distance;
+    self.distance += distance;
 }
 
 - (void)toggleEngine:(BOOL)turnOn
