@@ -9,6 +9,16 @@
 
 static int count = 0;
 
+@interface Car ()
+{
+    double _distance;
+}
+
+- (void)startEngine;
+- (void)io;
+
+@end
+
 @implementation Car
 
 - (id)initWithModel:(NSString *)model andPower:(double)power
@@ -31,6 +41,16 @@ static int count = 0;
 + (void)printCount
 {
     NSLog(@"Cars count = %d", count);
+}
+
+- (void)ride:(double)distance
+{
+    _distance += distance;
+}
+
+- (void)toggleEngine:(BOOL)turnOn
+{
+    
 }
 
 @end

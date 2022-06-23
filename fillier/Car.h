@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface Car : NSObject
+@interface Car : NSObject <Vehicle>
 {
     double _power;
     NSString *_model;
