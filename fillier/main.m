@@ -8,6 +8,7 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import "Car.h"
+#import "Car+SoundSystem.h"
 
 int main(int argc, char * argv[]) {
     NSString * appDelegateClassName;
@@ -24,6 +25,8 @@ int main(int argc, char * argv[]) {
                 [car1 toggleEngine:NO];
             }
         }
+        
+        [car1 playAudio];
         
         Car *car2 = [[Car alloc] initWithModel:@"Audi" andPower:330];
         NSString *car2Info = [car2 info];
