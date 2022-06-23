@@ -15,7 +15,7 @@ static int count = 0;
 }
 
 - (void)startEngine;
-- (void)io;
+- (void)stopEngine;
 
 @end
 
@@ -50,7 +50,16 @@ static int count = 0;
 
 - (void)toggleEngine:(BOOL)turnOn
 {
-    
+    turnOn ? [self startEngine] : [self stopEngine];
 }
 
+- (void)startEngine
+{
+    NSLog(@"starting");
+}
+
+- (void)stopEngine
+{
+    NSLog(@"stopping");
+}
 @end
