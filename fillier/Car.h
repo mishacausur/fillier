@@ -9,6 +9,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol Vehicle <NSObject>
+
+- (void)ride:(double)distance;
+
+@optional
+- (void)toggleEngine:(BOOL)turnOn;
+
+@end
+
 @interface Car : NSObject
 {
     double _power;
